@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    {% include header.html %}
+    
+    <article>
+        <h1>{{ page.title }}</h1>
+        <p class="post-meta">Posted on {{ page.date | date: "%B %d, %Y" }}</p>
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </article>
+
+    <footer>
+        <p>&copy; {{ site.year }} {{ site.author }}</p>
+    </footer>
+</body>
+</html>

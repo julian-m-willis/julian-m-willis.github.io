@@ -1,0 +1,18 @@
+title: Julian M. Willis
+description: Welcome to my personal website powered by Jekyll.
+baseurl: ""
+url: "https://julian-m-willis.github.io"
+twitter_username: "your_twitter_username"
+github_username: "your_github_username"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+markdown: kramdown
+highlighter: rouge
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - _config.yml
+  - _posts/*
