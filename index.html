@@ -1,29 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css' | relative_url }}"
+    />
+  </head>
+  <body>
     {% include header.html %}
     <main>
-        <h1>Welcome to My Website</h1>
-        <p>This is the homepage of my personal website built with Jekyll.</p>
-        <h2>Recent Posts</h2>
+      <section id="hero">
+        <h1>Julian Maximillian Willis</h1>
+        <p>Software Engineer | Cloud Enthusiast | Problem Solver</p>
+        <p>
+          I specialize in building scalable web applications, automating
+          infrastructure, and delivering innovative solutions to complex
+          challenges.
+        </p>
+        <a href="#portfolio" class="cta-button">View My Work</a>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
         <ul>
-            {% for post in site.posts %}
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                    <span>{{ post.date | date: "%B %d, %Y" }}</span>
-                </li>
-            {% endfor %}
+          <li>
+            <strong>Programming Languages:</strong> Python, JavaScript, Go
+          </li>
+          <li><strong>Frameworks:</strong> React, Node.js, Flask</li>
+          <li><strong>DevOps Tools:</strong> Terraform, Docker, Kubernetes</li>
+          <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP</li>
         </ul>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/julian-m-willis/project1"
+              target="_blank"
+              >Project 1: Scalable Web App</a
+            >
+            - A full-stack application designed to handle high traffic.
+          </li>
+          <li>
+            <a
+              href="https://github.com/julian-m-willis/project2"
+              target="_blank"
+              >Project 2: Infrastructure Automation</a
+            >
+            - Automated cloud infrastructure using Terraform and CI/CD
+            pipelines.
+          </li>
+          <li>
+            <a
+              href="https://github.com/julian-m-willis/project3"
+              target="_blank"
+              >Project 3: Data Visualization Dashboard</a
+            >
+            - Interactive dashboards for real-time data insights.
+          </li>
+        </ul>
+      </section>
+
+      <section id="links">
+        <h2>Find Me Online</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/julian-m-willis" target="_blank"
+              ><img
+                src="{{ '/assets/icons/github.svg' | relative_url }}"
+                alt="GitHub"
+              />
+              GitHub</a
+            >
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/julian-m-willis" target="_blank"
+              ><img
+                src="{{ '/assets/icons/linkedin.svg' | relative_url }}"
+                alt="LinkedIn"
+              />
+              LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/julian-m-willis" target="_blank"
+              ><img
+                src="{{ '/assets/icons/twitter.svg' | relative_url }}"
+                alt="Twitter"
+              />
+              Twitter</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+      <p>
+        &copy; {{ site.time | date: "%Y" }} Julian Maximillian Willis. Built
+        with ❤️ using Jekyll.
+      </p>
     </footer>
     <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
-</body>
+  </body>
 </html>
