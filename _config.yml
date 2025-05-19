@@ -1,11 +1,12 @@
 title: Julian M. Willis
 description: Welcome to my personal website powered by Jekyll.
-baseurl: "" # Leave empty if hosted at the root of the domain
-url: "https://julian-m-willis.github.io"
-twitter_username: "julian_m_willis" # Replace with your actual Twitter username
-github_username: "julian-m-willis" # Replace with your actual GitHub username
-theme: minima
+baseurl: '' # Leave empty if hosted at the root of the domain
+url: 'https://julian-m-willis.github.io'
+twitter_username: 'julian_m_willis' # Replace with your actual Twitter username
+github_username: 'julian-m-willis' # Replace with your actual GitHub username
+remote_theme: pages-themes/slate@v0.2.0 # or any Pages-compatible theme
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
 markdown: kramdown
