@@ -1,40 +1,49 @@
-# julian-m-willis.github.io
+# Julian Maximillian Willis' Portfolio
 
-This is the personal website of Julian M. Willis, hosted on GitHub Pages using Jekyll.
+Welcome to my personal portfolio website! This site showcases my skills, projects, and professional presence as a Software Engineer.
 
-## Project Structure
+## Project Overview
 
-- **_config.yml**: Configuration settings for the Jekyll site.
-- **_includes/**: Contains reusable HTML snippets.
-  - **header.html**: The header section of the website.
-- **_layouts/**: Layout templates for the site.
-  - **default.html**: Default layout for pages.
-  - **post.html**: Layout for blog posts.
-- **_posts/**: Directory for blog posts.
-  - **2023-01-01-welcome-to-jekyll.md**: A welcome post to introduce the site.
-- **_sass/**: Custom Sass styles.
-  - **custom.scss**: Styles to be compiled into CSS.
-- **assets/**: Contains static assets.
-  - **css/**: Directory for CSS files.
-    - **style.css**: Main CSS styles.
-  - **js/**: Directory for JavaScript files.
-    - **script.js**: JavaScript for interactivity.
-- **index.html**: The homepage of the website.
+This portfolio is designed to provide a comprehensive view of my work and capabilities. It includes the following sections:
+
+- **Hero Section**: An introduction to who I am and what I do.
+- **Skills Section**: A detailed list of my technical skills and proficiencies.
+- **Portfolio Section**: A showcase of my projects, including links to GitHub repositories.
+- **Links Section**: Direct links to my professional social media profiles.
+
+## Features
+
+- **Tabbed Interface**: The website features a tabbed layout for easy navigation between different sections.
+- **Responsive Design**: The site is designed to be fully responsive, ensuring a great user experience on both desktop and mobile devices.
+- **Interactive Elements**: JavaScript is used to enhance user interaction, particularly in the tabbed sections.
 
 ## Setup Instructions
 
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Install Jekyll and Bundler if you haven't already:
+To run this project locally, follow these steps:
+
+1. Clone the repository:
    ```
-   gem install jekyll bundler
+   git clone https://github.com/julian-m-willis/julian-m-willis.github.io.git
    ```
-4. Build and serve the site locally:
+
+2. Navigate to the project directory:
    ```
-   bundle exec jekyll serve
+   cd julian-m-willis.github.io
    ```
-5. Open your browser and go to `http://localhost:4000` to see your site in action.
+
+3. Open `index.html` in your web browser to view the site.
+
+## Technologies Used
+
+- **HTML**: For the structure of the web pages.
+- **CSS**: For styling and layout.
+- **JavaScript**: For interactive features.
+- **Jekyll**: For static site generation.
 
 ## Contributing
 
-Feel free to fork the repository and submit pull requests for any improvements or bug fixes.
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Any feedback or suggestions are welcome!
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.

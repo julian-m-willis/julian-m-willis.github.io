@@ -29,38 +29,57 @@ layout: none # keeps your custom markup; Jekyll still processes Liquid tags
         <a href="#portfolio" class="cta-button">View My Work</a>
       </section>
 
-      <!-- ── Skills ──────────────────────────────────────────────────────────── -->
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li><strong>Programming&nbsp;Languages:</strong> Python, JavaScript, Go</li>
-          <li><strong>Frameworks:</strong> React, Node.js, Flask</li>
-          <li><strong>DevOps&nbsp;Tools:</strong> Terraform, Docker, Kubernetes</li>
-          <li><strong>Cloud&nbsp;Platforms:</strong> AWS, Azure, GCP</li>
-        </ul>
-      </section>
+      <!-- ── Tabs ────────────────────────────────────────────────────────────── -->
+      <section id="tabs">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
+          <button class="tablinks" onclick="openTab(event, 'portfolio')">Portfolio</button>
+          <button class="tablinks" onclick="openTab(event, 'about')">About Me</button>
+        </div>
 
-      <!-- ── Portfolio ───────────────────────────────────────────────────────── -->
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <ul>
-          <li>
-            <a href="https://github.com/julian-m-willis/project1" target="_blank">Project&nbsp;1: Scalable Web App</a>
-            – A full-stack application designed to handle high traffic.
-          </li>
-          <li>
-            <a href="https://github.com/julian-m-willis/project2" target="_blank"
-              >Project&nbsp;2: Infrastructure Automation</a
-            >
-            – Automated cloud infrastructure using Terraform and CI/CD pipelines.
-          </li>
-          <li>
-            <a href="https://github.com/julian-m-willis/project3" target="_blank"
-              >Project&nbsp;3: Data Visualization Dashboard</a
-            >
-            – Interactive dashboards for real-time data insights.
-          </li>
-        </ul>
+        <div id="skills" class="tabcontent">
+          <h2>Skills</h2>
+          <ul>
+            <li><strong>Programming&nbsp;Languages:</strong> Python, JavaScript, Go</li>
+            <li><strong>Frameworks:</strong> React, Node.js, Flask</li>
+            <li><strong>DevOps&nbsp;Tools:</strong> Terraform, Docker, Kubernetes</li>
+            <li><strong>Cloud&nbsp;Platforms:</strong> AWS, Azure, GCP</li>
+          </ul>
+        </div>
+
+        <div id="portfolio" class="tabcontent">
+          <h2>Portfolio</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/julian-m-willis/project1" target="_blank">Project&nbsp;1: Scalable Web App</a>
+              – A full-stack application designed to handle high traffic.
+            </li>
+            <li>
+              <a href="https://github.com/julian-m-willis/project2" target="_blank">Project&nbsp;2: Infrastructure Automation</a>
+              – Automated cloud infrastructure using Terraform and CI/CD pipelines.
+            </li>
+            <li>
+              <a href="https://github.com/julian-m-willis/project3" target="_blank">Project&nbsp;3: Data Visualization Dashboard</a>
+              – Interactive dashboards for real-time data insights.
+            </li>
+            <li>
+              <a href="https://github.com/julian-m-willis/project4" target="_blank">Project&nbsp;4: E-commerce Platform</a>
+              – A fully functional e-commerce site with payment integration.
+            </li>
+            <li>
+              <a href="https://github.com/julian-m-willis/project5" target="_blank">Project&nbsp;5: Chat Application</a>
+              – Real-time chat application built with WebSocket.
+            </li>
+          </ul>
+        </div>
+
+        <div id="about" class="tabcontent">
+          <h2>About Me</h2>
+          <p>
+            I am a passionate software engineer with a strong foundation in computer science and a keen interest in cloud technologies. 
+            I enjoy tackling complex problems and continuously learning new skills to enhance my expertise.
+          </p>
+        </div>
       </section>
 
       <!-- ── Links ───────────────────────────────────────────────────────────── -->
